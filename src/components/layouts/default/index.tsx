@@ -1,4 +1,3 @@
-import "../globals.css";
 import type { Metadata } from "next";
 import { useEffect, useState } from "react";
 import { Inter } from "next/font/google";

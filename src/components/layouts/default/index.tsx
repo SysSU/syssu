@@ -70,9 +70,7 @@ export default function RootLayout({
             p-6 
             shadow-xl 
             ${possibleShadeColors[currentShadowColor].shadow} 
-            border-2 
-          border-indigo-400
-          dark:border-indigo-400
+            border-2
          `}
         >
           {children}

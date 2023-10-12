@@ -1,9 +1,9 @@
 const Background =  () => {
   return (
   
-      <div className="absolute block w-full h-full -z-40">
+      <div className="fixed w-full h-full -z-40">
         <div
-          className="top-0 w-full h-full bg-center bg-cover"
+          className="w-full h-full bg-center bg-cover"
           style={{
             backgroundImage:
               "url('./main-background.jpg')",

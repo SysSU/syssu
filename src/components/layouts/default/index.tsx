@@ -56,7 +56,7 @@ export default function RootLayout({
   }, [currentShadowColor, countDirection, possibleShadeColors.length]);
 
   return (
-    <main className={`flex h-screen ${inter.className}`}>
+    <main className={`flex ${inter.className}`}>
       <Background />
       <section className="z-40 m-auto max-w-7xl">
         <div
@@ -65,8 +65,7 @@ export default function RootLayout({
           dark:bg-slate-900/95
           bg-slate-900/95
            ${possibleShadeColors[currentShadowColor].border} 
-            ml-10 
-            mr-10 
+            m-10
             pb-2
             p-6 
             shadow-xl 

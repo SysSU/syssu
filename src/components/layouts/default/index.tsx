@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import Background from "./background";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "SysSU - Vernon Stone",
-};
 
 export default function RootLayout({
   children,

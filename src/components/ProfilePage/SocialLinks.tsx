@@ -1,6 +1,7 @@
-import { useFetch } from "react-async";
+import { useFetch } from 'react-async';
+import { friendlyIDFromStr } from '../../utils/Strings';
 
-interface SocialLink {
+export interface ISocialLink {
   name: string;
   type: string;
   url: string;
@@ -15,15 +16,21 @@ export default function SocialLinks() {
     <div className="mt-10">
       {isLoading || (error && <div></div>)}
       {(data as any) && (
-        <>
+        <span id="socialLinksContainer">
           <span className="align-middle test-bold mr-2 text-sm mt-2 dark:text-secondary font-bold">
             Social Links:
           </span>{" "}
-          {(data as SocialLink[]).map((link) => {
+          {(data as ISocialLink[]).map((link) => {
             return (
               <a
+                id={`SocialLink-${friendlyIDFromStr(link.name)}`}
                 key={link.name}
                 href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={link.name}
+                aria-labelledby={link.name}
+                aria-describedby={link.name}
                 className="h-8 w-8 rounded-full outline-none focus:outline-none align-middle"
                 type="button"
               >
@@ -31,7 +38,7 @@ export default function SocialLinks() {
               </a>
             );
           })}
-        </>
+        </span>
       )}
     </div>
   );

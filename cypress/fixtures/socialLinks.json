@@ -1,0 +1,23 @@
+[
+  {
+    "name": "LinkedIn",
+    "type": "LinkedIn",
+    "url": "https://www.linkedin.com/in/seldon-stone-b9836546/"
+  },
+  {
+    "name": "GitHub",
+    "type": "GitHub",
+    "url": "https://github.com/SysSU"
+  },
+  {
+    "name": "Email",
+    "type": "Email",
+    "url": "mailto:sel@syssu.com"
+  },
+  {
+    "name": "FishHop.com",
+    "type": "website",
+    "url": "https://www.fishhop.com"
+  }
+  
+]

@@ -4,7 +4,6 @@ import Background from './background';
 
 const inter = Inter({ subsets: ['latin'] });
 
-
 export default function RootLayout({
   children,
 }: {

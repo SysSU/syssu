@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { Inter } from "next/font/google";
-import Background from "./background";
+import { useEffect, useState } from 'react';
+import { Inter } from 'next/font/google';
+import Background from './background';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 
 export default function RootLayout({
@@ -12,16 +12,16 @@ export default function RootLayout({
 }) {
   const possibleShadeColors = [
     {
-      shadow: "shadow-indigo-600/70 dark:shadow-indigo-600/70",
-      border: "border-indigo-600 dark:border-indigo-600",
+      shadow: 'shadow-indigo-600/70 dark:shadow-indigo-600/70',
+      border: 'border-indigo-600 dark:border-indigo-600',
     },
     {
-      shadow: "shadow-indigo-600/75 dark:shadow-indigo-600/75",
-      border: "border-indigo-600 dark:border-indigo-600",
+      shadow: 'shadow-indigo-600/75 dark:shadow-indigo-600/75',
+      border: 'border-indigo-600 dark:border-indigo-600',
     },
     {
-      shadow: "shadow-indigo-600/80 dark:shadow-indigo-600/80",
-      border: "border-indigo-600 dark:border-indigo-600",
+      shadow: 'shadow-indigo-600/80 dark:shadow-indigo-600/80',
+      border: 'border-indigo-600 dark:border-indigo-600',
     },
   ];
 

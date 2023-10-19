@@ -1,6 +1,6 @@
-import { useFetch } from "react-async";
-import ProfileImage from "../components/ProfilePage/ProfileImage";
-import SocialLinks from "../components/ProfilePage/SocialLinks";
+import { useFetch } from 'react-async';
+import ProfileImage from '../components/ProfilePage/ProfileImage';
+import SocialLinks from '../components/ProfilePage/SocialLinks';
 
 interface PageDetailsREsponse {
   title: string;
@@ -9,8 +9,8 @@ interface PageDetailsREsponse {
 }
 
 export default function Home() {
-  const { data, error, isLoading } = useFetch("/api/data/frontPageDetails", {
-    headers: { accept: "application/json" },
+  const { data, error, isLoading } = useFetch('/api/data/frontPageDetails', {
+    headers: { accept: 'application/json' },
   });
 
   if (isLoading) return <div>Loading...</div>;

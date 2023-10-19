@@ -1,5 +1,5 @@
-import Image from "next/image";
-import profileImage from "../../../public/profileImage.jpg";
+import Image from 'next/image';
+import profileImage from '../../../public/profileImage.jpg';
 
 export default function ProfileImage() {
   return (

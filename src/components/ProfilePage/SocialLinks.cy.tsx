@@ -5,8 +5,8 @@ import { friendlyIDFromStr } from '../../utils/Strings';
 
 describe('<SocialLinks />', () => {
   it('Should load empty shell when it fails to load data state', () => {
-    cy.mount(<SocialLinks />)
-    cy.get('#socialLinksContainer').should('not.exist')
+    cy.mount(<SocialLinks />);
+    cy.get('#socialLinksContainer').should('not.exist');
   });
 
   it('Should load social links', () => {
@@ -26,8 +26,8 @@ describe('<SocialLinks />', () => {
         cy.get(socialLinkId).should('have.attr', 'aria-labelledby', link.name);
         cy.get(socialLinkId).should('have.attr', 'aria-describedby', link.name);
 
-      })
-    })
+      });
+    });
   });
 
 });

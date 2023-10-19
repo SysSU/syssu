@@ -6,12 +6,12 @@ const DataServer = async function handler(req: NextApiRequest, res: NextApiRespo
   //Find the absolute path of the json directory
   const jsonDataDir = path.join(process.cwd(), 'data/json');
   const { filePath } = req.query;
-  console.log(filePath)
+  console.log(filePath);
   
   //Read the json data file data.json
   const fileContents = await fs.readFile(jsonDataDir + `/${filePath}.json`, 'utf8');
   //Return the content of the data file in json format
   res.status(200).json(JSON.parse(fileContents));
-}
+};
 
 export default DataServer;

@@ -25,12 +25,12 @@ export default function ProfileDetails() {
         {pageDetails.title}
       </h1>
       <h2
-        className="text-sm mt-2 dark:text-secondary font-bold italic"
+        className="text-lg mt-2 dark:text-secondary font-bold italic"
         id="profileDetailsSubTitle"
       >
         {pageDetails.subTitle}
       </h2>
-      <div className="text-xs md:text-sm mt-2" id="profileDetailsBody">
+      <div className="text-base md:text-sm mt-2" id="profileDetailsBody">
         <p dangerouslySetInnerHTML={{ __html: pageDetails.body }} />
       </div>
     </div>

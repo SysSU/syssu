@@ -1,7 +1,13 @@
 import type { Config } from 'tailwindcss';
 import colors from 'tailwindcss/colors';
 
-const customColors = {...colors, default: colors.cyan[600], primary: colors.slate[50], secondary: colors.slate[300], linkPrimary: colors.pink[400]}
+const customColors = {
+  ...colors,
+  default: colors.cyan[200],
+  primary: colors.slate[50],
+  secondary: colors.slate[300],
+  linkPrimary: colors.pink[400],
+};
 
 const config: Config = {
   darkMode: 'class',
@@ -18,8 +24,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
-    colors: customColors
+    colors: customColors,
   },
   plugins: [],
-}
-export default config
+};
+export default config;

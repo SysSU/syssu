@@ -9,7 +9,6 @@ const DataServer = async function handler(
   //Find the absolute path of the json directory
   const jsonDataDir = path.join(process.cwd(), 'data/json');
   const { filePath } = req.query;
-  console.log(filePath);
 
   //Read the json data file data.json
   const fileContents = await fs.readFile(

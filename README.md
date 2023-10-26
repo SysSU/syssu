@@ -32,4 +32,3 @@ The test files should be stored within the same location of the component that t
 ## TODO:
 - Update readme with more information
 - Explain why I decided to make some of the data json data
-- Write unit tests

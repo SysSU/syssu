@@ -1,0 +1,12 @@
+.profileDetails h1 {
+  @apply text-3xl font-bold dark:text-primary text-primary;
+}
+
+
+.profileDetails h2 {
+  @apply text-xl mt-2 dark:text-secondary text-primary font-bold;
+}
+
+.profileDetails h3 {
+  @apply text-lg mt-2 dark:text-secondary text-primary font-bold;
+}

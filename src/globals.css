@@ -26,6 +26,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+strong {
+  color: theme(colors.slate[300]);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: theme(colors.cyan[200]);
+}
+
 a {
   color: theme(colors.linkPrimary);
 }

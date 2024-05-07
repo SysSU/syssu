@@ -3,9 +3,9 @@ import colors from 'tailwindcss/colors';
 
 const customColors = {
   ...colors,
-  default: colors.cyan[200],
+  default: colors.white,
   primary: colors.slate[50],
-  secondary: colors.slate[300],
+  secondary: colors.sky[300],
   linkPrimary: colors.pink[400],
 };
 

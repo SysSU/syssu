@@ -2,15 +2,14 @@
   @apply text-3xl mt-4;
 }
 
-
 .profileDetails h2 {
   @apply text-xl;
 }
 
 .profileDetails h3 {
-  @apply text-lg
+  @apply text-lg;
 }
 
 .profileDetails :is(h1, h2, h3, h4, h5, h6) {
-  @apply mt-4 dark:text-secondary text-primary font-bold;
+  @apply mt-4 font-bold;
 }
